@@ -20,9 +20,9 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 # Create a Translator object
 translator = Translator()
-
+promt=input("enter the prompt :")
 # Translate English to Tamil
-result = translator.translate('Hello, how are you?', src='en', dest='ta')
+result = translator.translate(promt, src='en', dest='ta')
 sd=result.text
 # Print the translated text
 print(sd)
